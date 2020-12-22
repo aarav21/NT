@@ -1,0 +1,79 @@
+<html>
+
+<head>
+  <title>Image recognition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+
+<body style="text-align: center;">
+  <div>
+    <br>
+    <div style="width:350;" id="div1">
+      <h1> Image recognition </h1>
+    </div>
+    <br>
+    <br>
+    <div id="mainDiv">
+      <br>
+      <h2>Model is trained to identify the following objects:</h2>
+      <br>
+      <label>Coffe Coster</label>
+      <hr>
+      <label>book</label>
+      <hr>
+      <label>Plant</label>
+      <hr>
+      <label>Keyboard</label>
+      <hr>
+
+    </div>
+    <br>
+    <br>
+
+    <div class="col-lg-6 ">
+      <label style="color: white; font-size: large;">Webcam View</label>
+      <div id="camera">
+      </div>
+    </div>
+    <div class="col-lg-6 ">
+      <label style="color: white; font-size: large;">View Result</label>
+      <div id="result">
+      </div>
+    </div>
+    <br>
+    <Br>
+    <Br>
+    <div id="notMainDiv"></div>
+    <br>
+    <p style="color: white; font-size: large;">Object:</p>
+    <span id="objectName" style="font-size: larger; color:white; display:inline"></span>
+    <br>
+    <p style="color: white; font-size: large;">Accuracy</p>
+    <span id="Accuracy" style="font-size: larger; color:white; display:inline"></span>
+    <br>
+    <span>
+      <button class="btn-danger" style="border-radius: 10px; height:40" onClick="takeSnapShot()">Capture Image</button>
+      <br>
+      <br>
+      <button class="btn-success" style="border-radius: 10px; height:40" onClick="check()" >Idenfity Image</button>
+      <br>
+      <br>
+      <hr>
+    </span>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
